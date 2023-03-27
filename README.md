@@ -2,11 +2,18 @@ Project Name: Secure Application CA2
 A brief description of your project.
 
 Branch Name: 
-Main 
+main Branch for Part 4 
 
-Table of Contents: Contents of Example Project
+Table of Contents: "Docker Setup" - using cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 Installation: 
-Steps for the installation of the project 
+Steps for the installation of the Docker container
+ `Inline code block`
+"Docker Setup"
+`docker network create  myca_network_ker`
+"Running a MySQL Docker Image"
+`docker run -d --name db -e MYSQL_ROOT_PASSWORD=my-secret-password mysql:latest`
+"Running phpMyAdmin on Docker Network"
+`docker run -d --name phpmyadmin -p 8080:80 --network  myca_network_ker phpmyadmin/phpmyadmin`
 
 Usage
 Instructions on how to use the project.
